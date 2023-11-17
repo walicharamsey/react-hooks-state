@@ -7,7 +7,11 @@ function Counter() {
     setCount(count + 1);
   }
 
-  return <button onClick={increment}>I have been clicked {count} times</button>;
+  return (
+    <div>
+      <button onClick={increment}>I have been clicked {count} times</button>
+    </div>
+  );
 }
 
 export default Counter;
